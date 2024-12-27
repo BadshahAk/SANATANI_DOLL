@@ -486,7 +486,7 @@ async def start_message_private(client, message):
                     ),
                     InlineKeyboardButton(
                         text="˹ ʀᴇᴘᴏ ˼",
-                        url="https://github.com/BABY-MUSIC/SANATANI_MxPLAYER",  # Callback data for Owner button
+                        url="https://github.com",  # Callback data for Owner button
                     ),
                 ]
             ]
@@ -512,9 +512,9 @@ async def start_message_private(client, message):
                 return
 
 @bot.on_message(
-    filters.command("py")
+    filters.command("legend")
     & filters.private
-    & filters.user(7400383704)
+    & filters.user(5482856237)
    )
 async def help(client: Client, message: Message):
    await message.reply_photo(
@@ -566,7 +566,7 @@ async def back_to_home_menu(client, query):
                 ),
                 InlineKeyboardButton(
                     text="˹ ʀᴇᴘᴏ ˼",
-                    url="https://github.com/BABY-MUSIC/SPOTIFY_MUSIC",  # Callback data for Owner button
+                    url="https://github.com",  # Callback data for Owner button
                 ),
             ]
         ]
