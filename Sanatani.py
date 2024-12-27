@@ -458,7 +458,7 @@ async def start_message_private(client, message):
 │**❍ ɪ ᴀᴍ 【˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ】🥀 •**
 ├───────────────────▣**
 │**❍ ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ғᴇᴀᴛᴜʀᴇs •**
-│**❍ ᴍᴀᴅᴇ ʙʏ...[˹ ʙᴀʙʏ-ᴍᴜsɪᴄ ™˼𓅂](https://t.me/DOLL4321) •**
+│**❍ ᴍᴀᴅᴇ ʙʏ...[𓆩˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ˼𓆪⁩](https://t.me/DOLL4321) •**
 ╰───────────────────▣"""
 
         buttons = InlineKeyboardMarkup(
@@ -538,7 +538,7 @@ async def back_to_home_menu(client, query):
 │**❍ ɪ ᴀᴍ 【˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ】🥀 •**
 ├───────────────────▣**
 │**❍ ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ғᴇᴀᴛᴜʀᴇs •**
-│**❍ ᴍᴀᴅᴇ ʙʏ...[˹ ʙᴀʙʏ-ᴍᴜsɪᴄ ™˼𓅂](https://t.me/DOLL4321) •**
+│**❍ ᴍᴀᴅᴇ ʙʏ...[𓆩˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ˼𓆪⁩](https://t.me/DOLL4321) •**
 ╰───────────────────▣"""
 
     buttons = InlineKeyboardMarkup(
@@ -922,7 +922,7 @@ async def change_stream(chat_id):
 
     await call.play(chat_id, stream_media, config=call_config)
     await add_active_media_chat(chat_id, stream_type)
-    caption = f"""```\n🔊<b>【˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ】🚩•```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ʙᴀʙʏ-ᴍᴜsɪᴄ™˼```"""
+    caption = f"""```\n🔊<b>【˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ】🚩•```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ᴅᴏʟʟ ꭙ ```"""
     buttons = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -1244,7 +1244,7 @@ async def stream_audio_or_video(client, message):
                 position = await add_to_queue(
                     chat_id, user, title, duration, stream_file, stream_type, thumbnail
                 )
-                caption = f"""```\n🔊<b>【˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ】🚩•```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ʙᴀʙʏ-ᴍᴜsɪᴄ™˼```"""
+                caption = f"""```\n🔊<b>【˹ᴅᴏʟʟ ꭙ ᴍᴜsɪᴄ】🚩•```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ᴅᴏʟʟ ꭙ ```"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail
